@@ -11,10 +11,13 @@ body {
   width: 300px;
 }
 
-.sidebar_navigation {
+.sidebar_navigation,
+.library,
+.library_content {
   background-color: #121212;
   border-radius: 8px;
   padding: 16px 0 0 16px;
+  margin-bottom: 10px;
 }
 
 .sidebar_navigation .logo {
@@ -28,7 +31,8 @@ body {
   width: 80px;
 }
 
-.sidebar nav ul {
+.sidebar nav ul,
+.sidebar .library ul {
   margin-top: 20px;
   padding: 0 20px 10px 20px;
 }
@@ -37,10 +41,72 @@ body {
   padding: 10px 0;
 }
 
-.sidebar nav ul li a {
+.sidebar nav ul li a,
+.sidebar .library ul li a {
   color: #b3b3b3;
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
   font-family: "DM Sans", sans-serif;
+}
+
+.library {
+  padding-left: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.sidebar .library ul {
+  margin-top: 0;
+  margin-left: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.library_content {
+  background-color: #242424;
+  margin: 20px 10px;
+  margin-top: 0;
+}
+
+.library_content_text {
+  color: #fff;
+  font-size: 0.8rem;
+  padding-bottom: 14px;
+}
+
+.library_content_title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.create_playlist_button {
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  border: none;
+  width: 113px;
+  margin-bottom: 16px;
+}
+
+.cookies_text {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin: 25px 20px;
+  margin-left: 36px;
+}
+
+.language_button {
+  background-color: transparent;
+  border-radius: 9999px;
+  border: 1px solid #878787;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+  width: 170px;
+  margin: 8px 8px 12px 16px;
+  font-weight: bold;
 }
